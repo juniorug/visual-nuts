@@ -26,3 +26,5 @@ To guarantee that this code keeps working when developers start making small fea
 * Q5: Find the most common official language(s), of all countries.
 
 There's one method for each question above. Also, for question 2, there's one other method that can be used to get the country with the most official languages by providing as a parameter any other country abbreviation.
+
+To guarantee that this code keeps working when developers start making small feature adjustments and keep the code safe from bugs, the class `CountriesDetailsTest` was written. It makes tests for the config file and also for methods for the `CountriesDetails` class. 
