@@ -2,6 +2,7 @@ package org.junior.visualnuts;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Country {
 
@@ -32,6 +33,32 @@ public class Country {
 
     public void setLanguages(List<String> languages) {
         this.languages = languages;
+    }
+    
+    public int getLanguagesSize() {
+        return languages.size();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(country, languages);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Country other = (Country) obj;
+        return Objects.equals(country, other.country) && Objects.equals(languages, other.languages);
+    }
+
+    @Override
+    public String toString() {
+        return "Country [country=" + country + ", languages=" + languages + "]";
     }
 
 }
