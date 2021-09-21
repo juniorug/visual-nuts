@@ -13,7 +13,6 @@ The method `loopAndPrintVisualNuts` iterates from 1 through the value read from 
 
 To guarantee that this code keeps working when developers start making small feature adjustments and keep the code safe from bugs, the class `VisualNutsTest` was written. It makes tests for the config file and also for methods for the `VisualNuts` class. 
 
-``
 
 ### Exercise 2:
 
